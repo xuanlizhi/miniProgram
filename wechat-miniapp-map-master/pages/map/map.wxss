@@ -1,0 +1,100 @@
+/* pages/map/map.wxss */
+
+.flex-style {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item {
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.flex-item.active {
+  color: #0091ff;
+}
+
+.map_box {
+  position: absolute;
+  top: 0;
+  bottom: 90rpx;
+  left: 0rpx;
+  right: 0rpx;
+}
+
+#navi_map {
+  width: 100%;
+  height: 100%;
+}
+
+.text_box {
+  position: absolute;
+  height: 180rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+}
+
+.text_box .text {
+  margin: 15rpx;
+}
+
+.detail_button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+  /* background: #0091ff; */
+  background: #da0606;
+  text-align: center;
+  font-size: 30rpx;
+}
+.distence{
+  position: absolute;
+  bottom: 90rpx;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #000;
+  /* background: #0091ff; */
+  background: #fff;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  left: 0rpx;
+  right: 0rpx;
+  background: #da0606;
+  width:100%;
+  z-index: 10;
+  height: 140rpx;
+}
+
+.form .form-item {
+  padding: 0 20rpx;
+  margin-bottom: 15rpx;
+  font-size: 26rpx;
+}
+
+.form .form-item text {
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  color: #fff;
+}
+
+.form .form-item input {
+  background: #fff;
+  width: 85%;
+  border-radius: 30rpx;
+  padding-left: 20rpx;
+}

@@ -1,0 +1,23 @@
+<view class="form">
+      <view class="flex-style form-item">
+        <text class="section__title">出发</text>
+        <input name="input" bindinput="originValue" placeholder="请输入出发地址" />
+      </view>
+      <view class="flex-style form-item">
+        <text class="section__title">到达</text>
+        <input name="input" bindinput="endValue" placeholder="请输入到达地址 " />
+      </view>
+    </view>
+<view class="map_box">
+  <map id="navi_map" longitude="{{centerLongitude}}" latitude="{{centerLatitude}}" scale="{{scale}}" markers="{{markers}}" polyline="{{polyline}}">
+    
+  </map>
+</view>
+<view class="distence">预计回家里程：{{distance}}Km</view>
+<view class="detail_button" bindtap="goRoutes">
+  导航
+</view>
+<!-- <view class="text_box">
+  <view class="text">{{distance}}</view>
+  <view class="text">{{cost}}</view>
+</view> -->
